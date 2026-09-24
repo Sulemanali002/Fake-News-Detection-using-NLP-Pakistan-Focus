@@ -1,44 +1,52 @@
-# Fake News Detection using NLP — Pakistan Focus
- 
-## Description
-A machine learning project that classifies news articles as FAKE or REAL
-using Natural Language Processing (NLP) and TF-IDF text vectorization.
-Built as a first step from tabular ML into text-based ML.
- 
+# Fake News Detection using NLP
+
+A machine learning project that classifies news articles as **Fake** or **Real** using Natural Language Processing (NLP) and TF-IDF text vectorization.
+
+This project was developed as a practical step from traditional tabular machine learning into **text classification and NLP**.
+
+## Project Overview
+
+The goal of this project is to build and compare multiple machine learning models for detecting fake news based on the textual content of news articles.
+
+The workflow includes:
+
+- Text preprocessing and cleaning
+- Exploratory analysis of fake and real news
+- Word cloud visualization
+- TF-IDF feature extraction
+- Training and comparison of multiple classification models
+- Testing the trained models on custom news text
+
 ## Dataset
-Kaggle: Fake and Real News Dataset (Clement Bisaillon)
+
+This project uses the **Fake and Real News Dataset** by Clement Bisaillon from Kaggle.
+
+**Dataset:**  
 https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
-~44,000 news articles (Fake.csv + True.csv)
- 
-## What I Built
-- Text cleaning pipeline (lowercasing, punctuation removal, stopword removal)
-- Word cloud visualizations comparing fake vs real vocabulary
-- TF-IDF vectorization of article text
-- 4 trained models: Logistic Regression, Random Forest, Decision Tree,
-  Passive Aggressive Classifier
-- An interactive function that classifies any custom headline
- 
-## Results
-| Model                | Accuracy | Precision | Recall | F1 Score |
-|-----------------------|----------|-----------|--------|----------|
-| Logistic Regression   |   TBD    |    TBD    |  TBD   |   TBD    |
-| Random Forest         |   TBD    |    TBD    |  TBD   |   TBD    |
-| Decision Tree         |   TBD    |    TBD    |  TBD   |   TBD    |
-| Passive Aggressive    |   TBD    |    TBD    |  TBD   |   TBD    |
- 
-## Key Finding
-TBD — fill in after running Step 9 (e.g. which model performed best and why).
- 
-## Tools Used
-Python, pandas, numpy, matplotlib, seaborn, scikit-learn, nltk, wordcloud
- 
-## How to Run
-1. Download Fake.csv and True.csv from the Kaggle link above
-2. Place both files in the project folder
-3. Open the notebook and run all cells in order
-4. Use predict_news('your headline here') to test any headline
- 
-## Author
-Suleman Ali
-University of Baltistan, Skardu — Gilgit-Baltistan, Pakistan
-GitHub: github.com/SulemanAli2002
+
+The dataset contains approximately **44,000 news articles** divided into:
+
+- `Fake.csv` — Fake news articles
+- `True.csv` — Real news articles
+
+### Dataset Setup
+
+The dataset files are not included in this repository.
+
+To use the project:
+
+1. Download the dataset from Kaggle.
+2. Extract `Fake.csv` and `True.csv`.
+3. Place them in the project's `data/` directory.
+
+Example:
+
+```text
+Fake-News/
+├── data/
+│   ├── Fake.csv
+│   └── True.csv
+├── notebooks/
+├── src/
+├── README.md
+└── requirements.txt
